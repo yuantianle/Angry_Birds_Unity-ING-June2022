@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8954841765665718960
+--- !u!1 &3516900688841157508
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2216347236388371080}
-  - component: {fileID: 5199291465230450812}
-  - component: {fileID: 7702327926300377374}
-  - component: {fileID: 4803009882419141570}
+  - component: {fileID: 5929406442686288828}
+  - component: {fileID: 336907566077077832}
+  - component: {fileID: 2769535510972393514}
+  - component: {fileID: 1021419525040173814}
+  - component: {fileID: 4460901033975734915}
+  - component: {fileID: 2182433888980574675}
   m_Layer: 0
   m_Name: Angrybird
   m_TagString: Untagged
@@ -19,28 +21,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2216347236388371080
+--- !u!4 &5929406442686288828
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8954841765665718960}
+  m_GameObject: {fileID: 3516900688841157508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.55, y: -2.64, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalPosition: {x: -6.61, y: -1.77, z: 0}
+  m_LocalScale: {x: 0.06054, y: 0.06054, z: 0.06054}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5199291465230450812
+--- !u!212 &336907566077077832
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8954841765665718960}
+  m_GameObject: {fileID: 3516900688841157508}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -86,14 +88,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &7702327926300377374
+--- !u!50 &2769535510972393514
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8954841765665718960}
+  m_GameObject: {fileID: 3516900688841157508}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -107,13 +109,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &4803009882419141570
+--- !u!58 &1021419525040173814
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8954841765665718960}
+  m_GameObject: {fileID: 3516900688841157508}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 06592f5bc0010f0409b01fc53e914bd7, type: 2}
@@ -123,3 +125,40 @@ CircleCollider2D:
   m_Offset: {x: 0.5, y: 0}
   serializedVersion: 2
   m_Radius: 5.37
+--- !u!114 &4460901033975734915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3516900688841157508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 430d20395561b054f815bcbbbfe93985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_center: {fileID: 0}
+  m_max_length: 3.13
+  m_bottom_boundary: -3.4
+  m_shoot_force: 2
+  m_bird_prefab: {fileID: 3516900688841157508}
+--- !u!231 &2182433888980574675
+SpringJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3516900688841157508}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0.02900362, y: 0.875877}
+  m_AutoConfigureDistance: 0
+  m_Distance: 0.27
+  m_DampingRatio: 0
+  m_Frequency: 2
